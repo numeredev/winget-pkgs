@@ -1,4 +1,4 @@
-# Automatically updated by the winget bot at 2026/May/12
+# Created using wingetcreate 1.12.8.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: FilesCommunity.Files
@@ -22,7 +22,8 @@ FileExtensions:
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: Microsoft.VCLibs.Desktop.14
-  - PackageIdentifier: Microsoft.WindowsAppRuntime.1.8
+  - PackageIdentifier: Microsoft.WindowsAppRuntime.2
+  - PackageIdentifier: Microsoft.DotNet.Runtime.10
 PackageFamilyName: Files_1y0xx7n9077q4
 Capabilities:
 - internetClient
@@ -34,15 +35,15 @@ RestrictedCapabilities:
 - packageManagement
 - runFullTrust
 - unvirtualizedResources
-ReleaseDate: 2026-03-24
 AppsAndFeaturesEntries:
 - Publisher: Yair A
-InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Files_4.0.37.0_x64__1y0xx7n9077q4'
 Installers:
 - Architecture: arm64
-  InstallerUrl: https://cdn.files.community/files/stable/Files.Package/Files.Package_x64_arm64.msixbundle
-  InstallerSha256: 3D63D62B7CCA0B361B2F782B60862C259345196BAC5F46C3358CAF78A6AF9F76
-  SignatureSha256: 5E62623EC10ED5FAC4D6EFF51278EB0AED20BE2D78E8E52C5DEA29E5843A3BDE
+  InstallerUrl: https://cdn.files.community/files/stable/Files.Package_4.2.0.0_Test/Files.Package_4.2.0.0_x64_arm64.msixbundle
+  InstallerSha256: bfac7288b2d09fd5b70441f5763ad8c341e78b2d8b1698993f4fb7b785fdc758
+- Architecture: x64
+  InstallerUrl: https://cdn.files.community/files/stable/Files.Package_4.2.0.0_Test/Files.Package_4.2.0.0_x64_arm64.msixbundle
+  InstallerSha256: bfac7288b2d09fd5b70441f5763ad8c341e78b2d8b1698993f4fb7b785fdc758
 ManifestType: installer
 ManifestVersion: 1.12.0
+ReleaseDate: 2026-07-05
